@@ -25,6 +25,10 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+
+
     <!-- Core Swiper CSS & JS -->
     <link
       rel="stylesheet"
@@ -36,13 +40,53 @@
 
   <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
-      <!-- Navigation-->
+      <!-- Main-Navigation-->
+      <nav class="navbar navbar-expand-lg navbar-dark p-1 cfx-main-nav">
+        <div class="container">
+          <ul class="navbar-nav mb-1 mb-lg-0">
+            <li class="nav-item">
+              <span class="nav-link text-white">mail@cyberfoxx.net</span>
+            </li>
+            <li class="nav-item">
+              <span class="nav-link text-white">|</span>
+            </li>
+            <li class="nav-item">
+              <span class="nav-link text-white">9335987987</span>
+            </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-1 mb-lg-0">
+            <li class="nav-item">
+              <span class="nav-link text-white"><i class="bi bi-instagram"></i></span>
+            </li>
+            <li class="nav-item">
+              <span class="nav-link text-white"><i class="bi bi-facebook"></i></span>
+            </li>
+            <li class="nav-item">
+              <span class="nav-link text-white"><i class="bi bi-twitter"></i></span>
+            </li>
+            <li class="nav-item">
+              <span class="nav-link text-white"><i class="bi bi-google"></i></span>
+            </li>
+            <li class="nav-item">
+              <span class="nav-link text-white"><i class="bi bi-youtube"></i></span>
+            </li>
+            <li class="nav-item">
+              <span class="nav-link text-white"><i class="bi bi-whatsapp"></i></span>
+            </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Sub-Navigation-->
       <nav
-        class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow p-3 mb-5 rounded"
+        class="navbar navbar-expand-lg navbar-light bg-white p-2 shadow mb-5 rounded cfx-sub-nav"
       >
-        <div class="container px-5">
+        <div class="container">
           <a class="navbar-brand" href="index.html"
-            ><h4><strong>Cyberfoxx GST</strong></h4></a
+            ><img src="assets/Images/aaa.png" width="250px" ></a
           >
           <button
             class="navbar-toggler"
@@ -74,7 +118,7 @@
                   >Product</a
                 >
                 <ul
-                  class="dropdown-menu dropdown-menu-end cfx-product-box"
+                  class="dropdown-menu dropdown-menu-end cfx-sub-menu"
                   aria-labelledby="navbarDropdownBlog"
                 >
                   <li>
@@ -116,19 +160,23 @@
         </div>
       </nav>
       <!-- Header-->
-      <header class="py-5 mt-5">
+      <header class="py-4 mt-5">
         <div class="container px-5">
           <div class="row gx-5 align-items-center justify-content-center">
             <div class="col-lg-8 col-xl-7 col-xxl-6">
-              <div class="my-5 text-center text-xl-start">
-                <h1 class="display-5 fw-bolder text-dark mb-2">
-                  Stay Ahead of GST Compliance with Our Software
+              <div class="text-center text-xl-start">
+                <h1
+                  class="display-5 fw-bolder text-dark mb-2"
+                >
+                  Stay Ahead of GST Compliance with
+                  <span class="cfx-text-voilet">Cyberfoxx GST</span>
+                  Software
                 </h1>
                 <p class="lead fw-normal text-dark-50 mb-4">
                   Empower your business with our cutting-edge GST software,
                   designed to streamline your tax compliance processes and
                   simplify your financial operations. With
-                  <strong>Cyberfoxx Private Limited,</strong> navigating the
+                  <strong class="cfx-text-voilet">Cyberfoxx Private Limited,</strong> navigating the
                   complexities of GST regulations becomes effortless, allowing
                   you to focus on what truly matters – growing your business.
                 </p>
@@ -136,25 +184,15 @@
                   class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start"
                 >
                   <a
-                    class="btn btn-primary btn-lg px-4 me-sm-3 rounded-1"
+                    class="btn cfx-btn-voilet btn-lg px-4 me-sm-3 rounded-1"
                     href="#features"
-                    >Get Started</a
-                  >
-                  <a
-                    class="btn btn-outline-dark btn-lg px-4 rounded-1"
-                    href="#!"
-                    >Learn More</a
+                    >Download Brochure</a
                   >
                 </div>
               </div>
             </div>
             <div class="col-xl-5 col-xxl-6 d-xl-block text-center">
-              <!-- <img
-                class="img-fluid rounded-3 my-5"
-                src="https://dummyimage.com/600x400/343a40/6c757d"
-                alt="..."
-              /> -->
-              <div class="responsive-iframe bg-primary shadow">
+              <div class="responsive-iframe shadow">
                 <div class="row">
                   <h4 class="text-white">Request For Demo</h4>
                 </div>
@@ -162,7 +200,7 @@
                   <input
                     id="txtName"
                     name="txtName"
-                    class="cfx-form-control form-control text-white"
+                    class="cfx-form-control form-control text-white shadow-none"
                     placeholder="Full Name"
                   />
                 </div>
@@ -196,7 +234,7 @@
           <div class="row gx-5">
             <div class="col-lg-4 mb-5 mb-lg-0">
               <h2 class="fw-bolder mb-4">Latest Features</h2>
-              <p style="font-size: 18px">
+              <p class="lead fw-normal text-dark-50 mb-4">
                 Cyberfoxx GST return filing software simplifies the process of
                 complying with GST regulations, reduces the likelihood of
                 errors, and saves businesses time and effort in managing their
@@ -210,9 +248,9 @@
               <div class="row gx-5 row-cols-1 row-cols-md-2">
                 <div class="col mb-5 h-100">
                   <div
-                    class="feature bg-primary bg-gradient text-white rounded-3 mb-3"
+                    class="feature cfx-bg-voilet bg-gradient text-white shadow rounded-1 mb-3"
                   >
-                    <i class="bi bi-collection"></i>
+                    <i class="bi bi-bell"></i>
                   </div>
                   <h2 class="h5">GST Notice Remiender</h2>
                   <p class="mb-0">
@@ -222,9 +260,9 @@
                 </div>
                 <div class="col mb-5 h-100">
                   <div
-                    class="feature bg-primary bg-gradient text-white rounded-3 mb-3"
+                    class="feature cfx-bg-voilet bg-gradient shadow text-white rounded-3 mb-3"
                   >
-                    <i class="bi bi-building"></i>
+                    <i class="bi bi-truck"></i>
                   </div>
                   <h2 class="h5">E-WayBill Download</h2>
                   <p class="mb-0">
@@ -234,9 +272,9 @@
                 </div>
                 <div class="col mb-5 mb-md-0 h-100">
                   <div
-                    class="feature bg-primary bg-gradient text-white rounded-3 mb-3"
+                    class="feature cfx-bg-voilet bg-gradient shadow text-white rounded-3 mb-3"
                   >
-                    <i class="bi bi-toggles2"></i>
+                    <i class="bi bi-cart"></i>
                   </div>
                   <h2 class="h5">E-Commerce Excel Import</h2>
                   <p class="mb-0">
@@ -246,9 +284,9 @@
                 </div>
                 <div class="col h-100">
                   <div
-                    class="feature bg-primary bg-gradient text-white rounded-3 mb-3"
+                    class="feature cfx-bg-voilet bg-gradient shadow text-white rounded-3 mb-3"
                   >
-                    <i class="bi bi-toggles2"></i>
+                    <i class="bi bi-receipt"></i>
                   </div>
                   <h2 class="h5">Invoice Creation</h2>
                   <p class="mb-0">
@@ -262,10 +300,10 @@
         </div>
       </section>
       <!-- Testimonial section-->
-      <div class="py-5" style="background-color: #f3f9ff">
+      <div class="py-5 cfx-lightblue">
         <div class="container">
           <div class="text-center">
-            <h2 class="fw-bolder">Customer Reviews</h2>
+            <h1 class="fw-bolder cfx-text-darkorange">Customer Reviews</h1>
             <p class="lead fw-normal text-muted mb-5">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
               fugit ratione dicta mollitia. Officiis ad.
@@ -280,33 +318,27 @@
                 <div class="card-body">
                   <div class="row">
                     <div class="col-md-8">
-                      <div style="text-align: left">
+                      <div class="cfx-text-left">
                         <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
+                          class="bi bi-star-fill cfx-text-darkorange"
                         ></i>
                         <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
+                          class="bi bi-star-fill cfx-text-darkorange"
                         ></i>
                         <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
+                          class="bi bi-star-fill cfx-text-darkorange"
                         ></i>
                         <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
+                          class="bi bi-star-fill cfx-text-darkorange"
                         ></i>
                         <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
+                          class="bi bi-star-fill cfx-text-darkorange"
                         ></i>
                       </div>
                     </div>
                     <div class="col-md-4">
-                      <div style="text-align: right">
-                        <!-- <i class="bi bi-google" style="color: darkorange"></i> -->
-                        <svg
+                      <div class="cfx-text-right">
+                        <!-- <svg
                           xmlns="http://www.w3.org/2000/svg"
                           x="0px"
                           y="0px"
@@ -330,18 +362,18 @@
                             fill="#1565c0"
                             d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"
                           ></path>
-                        </svg>
+                        </svg> -->
                       </div>
                     </div>
                   </div>
                   <div class="row">
-                    <p style="font-size: small">
+                    <p class="lead fw-normal text-muted">
                       I Am Having A Great Experience Using This Software. Its
                       Employees Are Well-Trained. Especially Avinash Choudhary.
                     </p>
                   </div>
-                  <div class="row" style="text-align: right">
-                    <h6 style="color: gray">~ Vinod Singh</h6>
+                  <div class="row cfx-text-right">
+                    <h6 class=" fw-bold text-muted">~ Vinod Singh</h6>
                   </div>
                 </div>
               </div>
@@ -352,33 +384,27 @@
                 <div class="card-body">
                   <div class="row">
                     <div class="col-md-8">
-                      <div style="text-align: left">
+                      <div class="cfx-text-left">
                         <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
+                          class="bi bi-star-fill cfx-text-darkorange"
                         ></i>
                         <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
+                          class="bi bi-star-fill cfx-text-darkorange"
                         ></i>
                         <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
+                          class="bi bi-star-fill cfx-text-darkorange"
                         ></i>
                         <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
+                          class="bi bi-star-fill cfx-text-darkorange"
                         ></i>
                         <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
+                          class="bi bi-star-fill cfx-text-darkorange"
                         ></i>
                       </div>
                     </div>
                     <div class="col-md-4">
-                      <div style="text-align: right">
-                        <!-- <i class="bi bi-google" style="color: darkorange"></i> -->
-                        <svg
+                      <div class="cfx-text-right">
+                        <!-- <svg
                           xmlns="http://www.w3.org/2000/svg"
                           x="0px"
                           y="0px"
@@ -402,19 +428,19 @@
                             fill="#1565c0"
                             d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"
                           ></path>
-                        </svg>
+                        </svg> -->
                       </div>
                     </div>
                   </div>
                   <div class="row">
-                    <p style="font-size: small">
+                    <p class="lead fw-normal text-muted">
                       I Am Having A Great Experience Using This Software. Its
                       Employees Are Well-Trained. Especially Avinash Choudhary.
                     </p>
                   </div>
                   <div class="row">
-                    <div class="col-md-12" style="text-align: right">
-                      <h6 style="color: gray">~ Sameerr Singh</h6>
+                    <div class="col-md-12 cfx-text-right">
+                      <h6 class="text-muted">~ Sameerr Singh</h6>
                     </div>
                   </div>
                 </div>
@@ -426,33 +452,27 @@
                 <div class="card-body">
                   <div class="row">
                     <div class="col-md-8">
-                      <div style="text-align: left">
+                      <div class="cfx-text-left">
                         <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
+                          class="bi bi-star-fill cfx-text-darkorange"
                         ></i>
                         <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
+                          class="bi bi-star-fill cfx-text-darkorange"
                         ></i>
                         <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
+                          class="bi bi-star-fill cfx-text-darkorange"
                         ></i>
                         <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
+                          class="bi bi-star-fill cfx-text-darkorange"
                         ></i>
                         <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
+                          class="bi bi-star-fill cfx-text-darkorange"
                         ></i>
                       </div>
                     </div>
                     <div class="col-md-4">
-                      <div style="text-align: right">
-                        <!-- <i class="bi bi-google" style="color: darkorange"></i> -->
-                        <svg
+                      <div class="cfx-text-right">
+                        <!-- <svg
                           xmlns="http://www.w3.org/2000/svg"
                           x="0px"
                           y="0px"
@@ -476,234 +496,18 @@
                             fill="#1565c0"
                             d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"
                           ></path>
-                        </svg>
+                        </svg> -->
                       </div>
                     </div>
                   </div>
                   <div class="row">
-                    <p style="font-size: small">
+                    <p class="lead fw-normal text-muted">
                       I Am Having A Great Experience Using This Software. Its
                       Employees Are Well-Trained. Especially Avinash Choudhary.
                     </p>
                   </div>
-                  <div class="row" style="text-align: right">
-                    <h6 style="color: gray">~ Harshwardhan Singh</h6>
-                  </div>
-                </div>
-              </div>
-              <!-- Slide 4-->
-              <div
-                class="swiper-slide card border-0 shadow p-3 mb-5 bg-white rounded"
-              >
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-md-8">
-                      <div style="text-align: left">
-                        <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
-                        ></i>
-                        <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
-                        ></i>
-                        <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
-                        ></i>
-                        <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
-                        ></i>
-                        <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
-                        ></i>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div style="text-align: right">
-                        <!-- <i class="bi bi-google" style="color: darkorange"></i> -->
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          x="0px"
-                          y="0px"
-                          width="25"
-                          height="25"
-                          viewBox="0 0 48 48"
-                        >
-                          <path
-                            fill="#fbc02d"
-                            d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12	s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20	s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"
-                          ></path>
-                          <path
-                            fill="#e53935"
-                            d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039	l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"
-                          ></path>
-                          <path
-                            fill="#4caf50"
-                            d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"
-                          ></path>
-                          <path
-                            fill="#1565c0"
-                            d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"
-                          ></path>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <p style="font-size: small">
-                      I Am Having A Great Experience Using This Software. Its
-                      Employees Are Well-Trained. Especially Avinash Choudhary.
-                    </p>
-                  </div>
-                  <div class="row" style="text-align: right">
-                    <h6 style="color: gray">~ Manoj Singh</h6>
-                  </div>
-                </div>
-              </div>
-              <!-- Slide 5-->
-              <div
-                class="swiper-slide card border-0 shadow p-3 mb-5 bg-white rounded"
-              >
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-md-8">
-                      <div style="text-align: left">
-                        <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
-                        ></i>
-                        <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
-                        ></i>
-                        <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
-                        ></i>
-                        <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
-                        ></i>
-                        <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
-                        ></i>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div style="text-align: right">
-                        <!-- <i class="bi bi-google" style="color: darkorange"></i> -->
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          x="0px"
-                          y="0px"
-                          width="25"
-                          height="25"
-                          viewBox="0 0 48 48"
-                        >
-                          <path
-                            fill="#fbc02d"
-                            d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12	s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20	s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"
-                          ></path>
-                          <path
-                            fill="#e53935"
-                            d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039	l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"
-                          ></path>
-                          <path
-                            fill="#4caf50"
-                            d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"
-                          ></path>
-                          <path
-                            fill="#1565c0"
-                            d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"
-                          ></path>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <p style="font-size: small">
-                      I Am Having A Great Experience Using This Software. Its
-                      Employees Are Well-Trained. Especially Avinash Choudhary.
-                    </p>
-                  </div>
-                  <div class="row" style="text-align: right">
-                    <h6 style="color: gray">~ Rajveerr Singh</h6>
-                  </div>
-                </div>
-              </div>
-              <!-- Slide 6-->
-              <div
-                class="swiper-slide card border-0 shadow p-3 mb-5 bg-white rounded"
-              >
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-md-8">
-                      <div style="text-align: left">
-                        <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
-                        ></i>
-                        <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
-                        ></i>
-                        <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
-                        ></i>
-                        <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
-                        ></i>
-                        <i
-                          class="bi bi-star-fill"
-                          style="color: darkorange"
-                        ></i>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div style="text-align: right">
-                        <!-- <i class="bi bi-google" style="color: darkorange"></i> -->
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          x="0px"
-                          y="0px"
-                          width="25"
-                          height="25"
-                          viewBox="0 0 48 48"
-                        >
-                          <path
-                            fill="#fbc02d"
-                            d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12	s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20	s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"
-                          ></path>
-                          <path
-                            fill="#e53935"
-                            d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039	l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"
-                          ></path>
-                          <path
-                            fill="#4caf50"
-                            d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36	c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"
-                          ></path>
-                          <path
-                            fill="#1565c0"
-                            d="M43.611,20.083L43.595,20L42,20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571	c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"
-                          ></path>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <p style="font-size: small">
-                      I Am Having A Great Experience Using This Software. Its
-                      Employees Are Well-Trained. Especially Avinash Choudhary.
-                    </p>
-                  </div>
-                  <div class="row" style="text-align: right">
-                    <h6 style="color: gray">~ Jayash Singh</h6>
+                  <div class="row cfx-text-right">
+                    <h6 class="text-muted">~ Harshwardhan Singh</h6>
                   </div>
                 </div>
               </div>
@@ -713,7 +517,7 @@
         </div>
       </div>
 
-      <section class="bg-primary">
+      <section class="cfx-bg-voilet cfx-letter-spacing-2">
         <div class="container p-5">
           <div class="row text-center">
             <h3 class="text-white h1">
@@ -728,36 +532,40 @@
       <!-- Data Feeding section-->
       <section>
         <div class="container">
+         
           <!-- //=============== -->
 
-          <div class="row" style="padding-top: 100px">
+          <div class="row pt-5 pt-sm-5">
             <div class="col-md-6 text-center">
-              <img src="assets/Images/cfx1.JPG" class="w-100" />
+              <img src="assets/Images/cfx1.png" class="w-100" />
             </div>
-            <!-- d-flex align-items-center -->
             <div class="col-md-6 cfx-feature-list">
               <div class="row">
                 <div class="pb-1">
-                  <h3 class="fw-bolder text-muted">Data Input Features</h3>
+                  <h3 class="fw-bolder text-muted">Data Feeding Features</h3>
                 </div>
               </div>
               <div class="row d-flex align-items-center">
                 <ul class="list-unstyled">
                   <li>
-                    <i class="bi bi-check-circle-fill text-success h4"></i
-                    >&nbsp;Manual Entry all GST Forms
+                    <i class="bi bi-check-circle-fill cfx-text-voilet h5"></i
+                    >&nbsp;Manual entry for all GST forms.
                   </li>
                   <li>
-                    <i class="bi bi-check-circle-fill text-success h4"></i
-                    >&nbsp;Tally, Marg, Thapa, SAP, Dept Format Excel Import
+                    <i class="bi bi-check-circle-fill cfx-text-voilet h5"></i
+                    >&nbsp;Import Json File.
                   </li>
                   <li>
-                    <i class="bi bi-check-circle-fill text-success h4"></i
-                    >&nbsp;Data Import through Tally Connector
+                    <i class="bi bi-check-circle-fill cfx-text-voilet h5"></i
+                    >&nbsp;Import from Tally, Busy, Marg, Thapa, SAP and Dept format also.
                   </li>
                   <li>
-                    <i class="bi bi-check-circle-fill text-success h4"></i
-                    >&nbsp;E-Commerce Excel Import
+                    <i class="bi bi-check-circle-fill cfx-text-voilet h5"></i
+                    >&nbsp;Import E-Commerce Excel File ( Amazon, GlowRoad, Meesho, Flipkart, Shop-101, AJIO, Himalaya, Uniliver, Johnson & Johnson Sales Report, Zoho Tun Tun Sales Report )
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill cfx-text-voilet h5"></i
+                    >&nbsp;Import from Tally Connector.
                   </li>
                 </ul>
               </div>
@@ -773,27 +581,27 @@
 
           <!-- //=============== -->
 
-          <div class="row" style="padding-top: 100px">
+          <div class="row pt-5 pt-sm-5">
             <div class="col-md-6 cfx-feature-list">
               <div class="row">
-                <h3 class="fw-bolder text-muted">GST Online Services</h3>
+                <h3 class="fw-bolder text-muted">CFX Online Services</h3>
               </div>
               <ul class="list-unstyled">
                 <li>
-                  <i class="bi bi-check-circle-fill text-success h4"></i
-                  >&nbsp;Manual Entry all GST Forms
+                  <i class="bi bi-check-circle-fill cfx-text-voilet h5"></i
+                  >&nbsp;Download all GSTN data in a single click from GST Portal and export report with multiple formats.
                 </li>
                 <li>
-                  <i class="bi bi-check-circle-fill text-success h4"></i
-                  >&nbsp;Tally, Marg, Thapa, SAP, Dept Format Excel Import
+                  <i class="bi bi-check-circle-fill cfx-text-voilet h5"></i
+                  >&nbsp;[ GSTR-3B, GSTR-1, GSTR-2A, GSTR-2B, GSTR-2X ( TDS ), GSTR-9( 8A ), CMP-( 08 ), GSTR-4A, ITC Credit / Cash Ledger, TDS / TCS Credit, Tax ITC Summary, Challan & DRC-03, GSTR-9, GST Certificate, GSTIN Search ].
                 </li>
                 <li>
-                  <i class="bi bi-check-circle-fill text-success h4"></i
-                  >&nbsp;Data Import through Tally Connector
+                  <i class="bi bi-check-circle-fill cfx-text-voilet h5"></i
+                  >&nbsp;Download Notices, Replies & Orders.
                 </li>
                 <li>
-                  <i class="bi bi-check-circle-fill text-success h4"></i
-                  >&nbsp;E-Commerce Excel Import
+                  <i class="bi bi-check-circle-fill cfx-text-voilet h5"></i
+                  >&nbsp;Download return acknowledgement forms single or bulk.
                 </li>
               </ul>
               <div class="row pt-3">
@@ -806,36 +614,258 @@
             </div>
 
             <div class="col-md-6 text-center">
-              <img src="assets/Images/cfx1.JPG" class="w-100" />
+              <img src="assets/Images/cfx2.png" class="w-100" />
+            </div>
+          </div>
+
+          <!-- //=============== -->
+
+          <div class="row pt-5 pt-sm-5">
+            <div class="col-md-6 text-center">
+              <img src="assets/Images/cfx3.png" class="w-100" />
+            </div>
+            <div class="col-md-6 cfx-feature-list">
+              <div class="row">
+                <div class="pb-1">
+                  <h3 class="fw-bolder text-muted">CFX Reconciliation</h3>
+                </div>
+              </div>
+              <div class="row d-flex align-items-center">
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="bi bi-check-circle-fill cfx-text-voilet h5"></i
+                    >&nbsp;Reconcile sale / purchase B2B / CDNR data consollidated or invoice wise with [ GSTR-2A, GSTR-2B, GSTR-8A ], [ GSTR-1, E-Invoices, E-WayBill ].  
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill cfx-text-voilet h5"></i
+                    >&nbsp;Invoice wise reconcile between [ GSTR-2A vs GSTR-2B ], [ GSTR-2A vs GSTR-9(8A) ], [ GSTR-2B vs GSTR-9(8A) ], [ GSTR-1 vs E-Invoice ], [ GSTR-1 vs E-WayBill ].
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill cfx-text-voilet h5"></i
+                    >&nbsp;Consollidated reconcile between [ GSTR-3B vs GSTR-2B ], [ GSTR-3B vs GSTR-2A ], [ GSTR-3B vs GSTR-9(8A) ], [ GSTR-3B (ITC On RCM) vs GSTR-3B (Tax On RCM) ].
+                  </li>
+                </ul>
+              </div>
+              <div class="row pt-3">
+                <div class="col-md-6">
+                  <button type="button" class="btn btn-outline-success w-100">
+                    Know More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- //=============== -->
+
+          <div class="row pt-5 pt-sm-5">
+            <div class="col-md-6 cfx-feature-list">
+              <div class="row">
+                <h3 class="fw-bolder text-muted">CFX Report Section</h3>
+              </div>
+              <ul class="list-unstyled">
+                <li>
+                  <i class="bi bi-check-circle-fill cfx-text-voilet h5"></i
+                  >&nbsp;Export books or downloading data to pdf, excel or word also.
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill cfx-text-voilet h5"></i
+                  >&nbsp;Export report with multiple formats :
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill cfx-text-voilet h5"></i
+                  >&nbsp;[ Bill Wise, Party Wise, Tax Rate Wise, HSN / Item Wise, Amendments Report, State Wise, Tax Rate Wise Summary, Export To Excel and TDS Report, GSTR-3B Summary, GSTR-4 Summary, Stock Reports, Challan Report, Reconciliation Reports, Clients Reports, Return Status Pending / Filed Reports, Noices Reports, Turnover Wise Reports, Clients Reports as per turnover, Return Acknowledgement, Invoice Print ( Sale / Purchase Billing & Credit / Debit Note ) ].
+                </li>
+              </ul>
+              <div class="row pt-3">
+                <div class="col-md-6">
+                  <button type="button" class="btn btn-outline-success w-100">
+                    Know More
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 text-center">
+              <img src="assets/Images/cfx4.png" class="w-100" />
             </div>
           </div>
 
           <!-- //=============== -->
         </div>
       </section>
-    </main>
-    <!-- Footer-->
-    <footer class="bg-dark py-4 mt-auto">
-      <div class="container px-5">
-        <div
-          class="row align-items-center justify-content-between flex-column flex-sm-row"
-        >
-          <div class="col-auto">
-            <div class="small m-0 text-white">
-              Copyright &copy; Your Website 2023
-            </div>
-          </div>
-          <div class="col-auto">
-            <a class="link-light small" href="#!">Privacy</a>
-            <span class="text-white mx-1">&middot;</span>
-            <a class="link-light small" href="#!">Terms</a>
-            <span class="text-white mx-1">&middot;</span>
-            <a class="link-light small" href="#!">Contact</a>
-          </div>
-        </div>
-      </div>
-    </footer>
 
+      <!-- Newsletter section-->
+      <section class="newsletter mt-5">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+	<div class="content">
+		<h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+	<div class="input-group">
+         <input type="email" class="form-control newsletter" placeholder="Enter your email">
+         <span class="input-group-btn">
+         <button class="btn" type="submit">Subscribe Now</button>
+         </span>
+          </div>
+	</div>
+</div>
+</div>
+</div>
+      </section>
+
+      <!-- Floating Action Button section-->
+      <div class="fab-container">
+  <div class="fab shadow">
+    <div class="fab-content">
+      <span class="material-icons">support_agent</span>
+    </div>
+  </div>
+  <div class="sub-button shadow">
+    <a href="google.com" target="_blank">
+      <span class="material-icons">phone</span>
+    </a>
+  </div>
+  <div class="sub-button shadow">
+    <a href="google.com" target="_blank">
+      <span class="material-icons">mail_outline</span>
+    </a>
+  </div>
+  <div class="sub-button shadow">
+    <a href="google.com" target="_blank">
+      <span class="material-icons">help_outline</span>
+    </a>
+  </div>
+</div>
+
+    </main>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-white bg-dark">
+    <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom container">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="bi bi-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="bi bi-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="bi bi-globe me-2"></i>Cyberfoxx Private Limited
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Cyberfoxx GST</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Cyberfoxx E-Invoice</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Cyberfoxx Billing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Cyberfoxx E-WayBill</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Cyberfoxx Business Email</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Digital Signature</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">About</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Products</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Contact</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="bi bi-house me-2"></i>Afeem Kothi, Near Anwar Ganj Kanpur, Uttar Pradesh, India</p>
+          <p>
+            <i class="bi bi-envelope me-2"></i>
+            mail@cyberfoxx.net
+          </p>
+          <p><i class="bi bi-phone me-2"></i> + 91-7518666833</p>
+          <p><i class="bi bi-phone me-2"></i> + 91-9335987987</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://cyberfoxx.net/">cyberfoxx.net</a>
+  </div>
+  <!-- Copyright -->
+</footer>
     <!-- ################################################################################## -->
 
     <!-- Bootstrap core JS-->
