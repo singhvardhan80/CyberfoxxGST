@@ -99,7 +99,7 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  background-color:whitesmoke;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -166,7 +166,6 @@ h6, .h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
-  letter-spacing: 1.5px;
   font-size: 16px!important;
 }
 
@@ -10849,58 +10848,59 @@ html {
   min-height: 15rem;
 }
 
-/* //======================= Swiper Start ======================================================= */
+/* //################################################################################### */
 
-.swiper {
-  width: 100%;
-  height: 100%;
+/* //======================= Main Nav Section Start ======================================================= */
+
+.cfx-main-nav{
+   background-color: #5544b9;
+ }
+
+  @media (max-width : 500px) {
+ .cfx-main-nav{
+   display: none!important;
+ }   
+  }
+ 
+
+ .cfx-main-nav ul li span {
+    font-size: 12px;
+ }
+
+/* //======================= Main Nav Section End ======================================================= */
+
+/* //======================= Sub Nav Section Start ======================================================= */
+
+.navbar ul li {
+  font-size: 16px;
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.navbar ul li a {
+  color: black;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.navbar ul li a:hover {
+  color:black!important;
+  font-weight: 500;
+  /* text-decoration: underline; */
 }
 
 .cfx-sub-menu{
-  border-radius: 0px!important;
-  top: 61px !important;
+  border-radius: 2px!important;
+  top: 62px !important;
   left: 7px !important;
   width: 200px !important;
 }
 
-/* //======================= Swiper End ======================================================= */
+.cfx-sub-nav{
+  position: sticky!important; 
+  top: 0!important; 
+  z-index:2!important;
+ }
 
+/* //======================= Sub Nav Section End ======================================================= */
 
-/* //======================= Nav Start ======================================================= */
-
-.navbar ul li {
-  font-size: 17px;
-  font-weight: 500;
-}
-
-.navbar ul li a:hover {
-  color:#0b5ed7!important;
-  text-decoration: underline;
-}
-
-.cfx-feature-list ul li {
-  font-size: 19px;
-  font-weight: 500;
-  color: grey;
-}
-
-/* //======================= Nav End ======================================================= */
+/* //======================= Header Section Start ======================================================= */
 
 @media (max-width : 1400px) {
  .responsive-iframe {
@@ -10961,6 +10961,48 @@ input:focus{
             color: white!important;
 }
 
+/* //======================= Header Section end ======================================================= */
+
+
+/* //======================= Features Section Start ======================================================= */
+
+.cfx-feature-list ul li {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+  color:black;
+}
+
+/* //======================= Features Section end ======================================================= */
+
+
+/* //======================= Swiper Section Start ======================================================= */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* //======================= Swiper Section End ======================================================= */
+
+/* //======================= Newsletter Section Start ======================================================= */
+
 .newsletter::-ms-input-placeholder { /* Microsoft Edge */
             color: black!important;
  }
@@ -10977,72 +11019,6 @@ input:focus{
 .newsletter::-ms-input-placeholder { /* Microsoft Edge */
             color: black!important;
  }
-
- .cfx-main-nav{
-   background-color: #5544b9;
- }
-
-  @media (max-width : 500px) {
- .cfx-main-nav{
-   display: none!important;
- }   
-  }
- 
-
- .cfx-main-nav ul li span {
-    font-size: 14px;
- }
-
- .cfx-sub-nav{
-  position: sticky!important; 
-  top: 0!important; 
-  z-index:2!important;
- }
-
- .cfx-text-voilet{
-   color: #5544b9!important;
- }
-
- .cfx-bg-voilet{
-   background-color: #5544b9;
- }
-
- .cfx-btn-voilet{
-  background-color: #5544b9!important;
-  border-color: #5544b9!important;
-  color: white!important;
- }
-
- .cfx-letter-spacing-1{
-  letter-spacing: 1px;
- }
-
- .cfx-letter-spacing-2{
-  letter-spacing: 2px;
- }
-
- .cfx-lightblue{
-  background-color: #f3f9ff;
- }
-
- .cfx-text-left{
-  text-align: left;
- }
-
- .cfx-text-right{
-  text-align: right;
- }
-
- .cfx-text-darkorange{
-  color: darkorange;
- }
-
- ul{
-  line-height: 1.9;
- }
-
-
- /* //=========================================== */
 
  .newsletter {
 padding: 80px 0;
@@ -11075,7 +11051,9 @@ color: #fff;
 font-weight:600;
 }
 
- /* //=========================================== */
+/* //======================= Newsletter Section end ======================================================= */
+
+/* //======================= Floating Action button Section Start ======================================================= */
 
 @media (max-width : 500px) {
   .fab-container{
@@ -11162,3 +11140,93 @@ font-weight:600;
   color: white;
   padding-top: 6px;
 }
+
+/* //======================= Floating Action button Section end ======================================================= */
+
+
+/* //======================= Tooltip Section start ======================================================= */
+
+.tooltip-inner {
+    background-color: #5544b9!important;
+    box-shadow: 0px 0px 4px black!important;
+    opacity: 1 !important;
+}
+.tooltip.bs-tooltip-right .tooltip-arrow::before {
+    border-right-color: #2f4fff !important;
+}
+.tooltip.bs-tooltip-left .tooltip-arrow::before {
+    border-left-color: #2f4fff !important;
+}
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom-color: #2f4fff !important;
+}
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: #2f4fff !important;
+}
+
+/* //======================= Tooltip Section end ======================================================= */
+
+
+
+/* //############################################################################### */
+ 
+ .cfx-text-voilet{
+   color: #5544b9!important;
+ }
+
+ .cfx-bg-voilet{
+   background-color: #5544b9;
+ }
+
+ .cfx-btn-voilet{
+  background-color: #5544b9!important;
+  border-color: #5544b9!important;
+  color: white!important;
+ }
+
+ .cfx-letter-spacing-1{
+  letter-spacing: 1px;
+ }
+
+ .cfx-letter-spacing-2{
+  letter-spacing: 2px;
+ }
+
+ .cfx-lightblue{
+  background-color: #f3f9ff;
+ }
+
+ .cfx-text-left{
+  text-align: left;
+ }
+
+ .cfx-text-right{
+  text-align: right;
+ }
+
+ .cfx-text-darkorange{
+  color: darkorange;
+ }
+
+ ul{
+  line-height: 1.9;
+ }
+
+ a{
+  cursor: pointer;
+ }
+
+ /* //==================================== */
+ 
+ .review-caption{
+  font-size: 14px!important;
+  letter-spacing: 0.6px;
+ }
+
+ .more-text{
+  display: none;
+ }
+
+ .show-more .more-text{
+  display: inline;
+ }

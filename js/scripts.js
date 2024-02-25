@@ -8,3 +8,17 @@
 
 // ======================================================================================
 
+//#region Tooltip JS
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+return new bootstrap.Tooltip(tooltipTriggerEl)
+});
+//#endregion
+
+function fun_ReadMore(btnID, reviewID) {
+  const readMoreBtn = document.getElementById(btnID);
+  const review = document.getElementById(reviewID);
+  
+  review.classList.toggle('show-more');
+}
+
